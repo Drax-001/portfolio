@@ -8,4 +8,97 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #ccc;
+    font-family: Arial, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    height: 10%;
+    background-color: #6b6b6b;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    height: 10%;
+    background-color: #6b6b6b;
+}
+
+#social {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+}
+
+#description {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+
+#aboutMe>h1 {
+    font-weight: 800;
+}
+
+#aboutMe>h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 6%;
+}
+
+#aboutMe>h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 6%;
+}
+
+#image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(245, 198, 198);
+}
+
+#about {
+    height: 100%;
+    width: 100%;
+}
+
+#skills {
+    height: 100%;
+    width: 100%;
 }

@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #fff;
-    font-family: Arial, Helvetica;
+    font-family: 'acme' ,Arial, Helvetica;
 }
 
 a {
@@ -27,7 +27,7 @@ nav {
     align-items: center;
     padding: 2%;
     height: 10%;
-    background-color: #6b6b6bd2;
+    background-color: #6b6b6bde;
     position: fixed;
     left: 0;
     right: 0;
@@ -46,6 +46,10 @@ li {
     margin: 10px;
 }
 
+li:hover {
+    color: #77d6f3;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,7 @@ footer {
     padding: 4px;
     height: 10%;
     background-color: #6b6b6b;
+    color: #fff;
 }
 
 #social {
@@ -100,7 +105,7 @@ footer {
     margin-top: 6%;
 }
 
-#image {
+.image {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -117,13 +122,30 @@ footer {
     padding-bottom: 30px;
 }
 
-#skills {
-    height: 100%;
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+#content {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#text-cont {
+    height: 80%;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 6px 5px 3px #ccc;
+    padding: 20px;
+    transition: 800ms ease-in-out;
+}
+
+#text-cont:hover {
+    transform: scale(1.1);
 }
 
 .heading {
@@ -133,9 +155,61 @@ footer {
 }
 
 .s-link:hover {
-    color: #fff
+    color: #ccc
 }
 
-#thanks {
-    padding: 4px;
+#skills {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#container {
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skill {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.skill-cont{
+    height: 80%;
+    width: 30%;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px 4px #ccc;   
+    transition: 800ms ease-in-out;
+    text-align: center;
+}
+
+#skill-cont:hover {
+    transform: scale(1.02);
+}
+
+#button {
+    outline: none;
+    padding: 5px;
+}
+
+#projects {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
